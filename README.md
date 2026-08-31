@@ -1,6 +1,6 @@
 # data-document-redaction
 
-用于生成可用且不泄漏的数据/文档副本，并在文档完成后进行交付前的独立二次审查。支持 CSV、JSON、SQL、表格、PDF、Word、PowerPoint、图片、扫描件和日志。
+用于一次完成可用且不泄漏的数据/文档副本生成、验证和交付报告输出。支持 CSV、JSON、SQL、表格、PDF、Word、PowerPoint、图片、扫描件和日志。
 
 ## 整体架构
 
@@ -11,21 +11,20 @@ PlantUML 源文件：[data-document-redaction-architecture.puml](docs/diagrams/d
 ## 使用方式
 
 ```text
-Use $data-document-redaction to independently review this completed document and output a privacy-safe audit report.
+Use $data-document-redaction to sanitize this document and output a privacy-safe delivery report.
 ```
 
-二次审查模式是只读质量门：重新建立独立证据链，检查可见内容、OCR、元数据、批注/修订、附件、链接、文件名、结构和业务效用，并输出 `pass`、`needs_review` 或 `blocked` 结论。它不替代法律/合规认证，也不用于恢复或绕过脱敏。
+一次处理流程包含范围确认、敏感内容检测、最小变换、格式与效用验证，以及不含原值的交付报告。它不替代法律/合规认证，也不用于恢复或绕过脱敏。
 
 ## 目录
 
 - [主 skill](data-document-redaction/SKILL.md)
-- [二次审查流程](data-document-redaction/references/secondary-review.md)
 - [文档表面与最低证据](data-document-redaction/references/document-surfaces.md)
 - [变换选择矩阵](data-document-redaction/references/transformation-matrix.md)
 - [报告字段与模板](data-document-redaction/references/output-report.md)
 - [Reddit 实战经验](data-document-redaction/references/reddit-practices.md)
 - [权威资料](data-document-redaction/references/authoritative-sources.md)
-- [本次 skill 更新审查报告](docs/secondary-review-report.md)
+- [本次 skill 更新报告](docs/skill-update-report.md)
 
 ## 本地验证
 
