@@ -1,0 +1,4 @@
+interface:
+  display_name: "数据与文档脱敏・二次审查"
+  short_description: "脱敏、独立复核敏感数据与文档，并输出可审计的审查报告"
+  default_prompt: "Use $data-document-redaction to sanitize or independently review this document, then output a privacy-safe audit report."
